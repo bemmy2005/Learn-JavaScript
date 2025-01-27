@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Event Listener two</title>
+</head>
+<body bgcolor="azure" id="bd">
+
+</body>
+<script>
+var colors = ["red", "green", "blue", "aliceblue", "gold", "indigo", "violet"];
+var i = 0;
+
+	document.addEventListener("click", changebgcolor);
+	function changebgcolor()
+{
+	var n = document.getElementById("bd");
+	n.style.backgroundColor = colors[i];
+
+	i = (i+1)%colors.length;
+}
+</script>
+</html>
